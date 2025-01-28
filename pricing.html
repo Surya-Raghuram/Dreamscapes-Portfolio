@@ -46,53 +46,50 @@
         .dropdown {
             position: relative;
         }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    text-align: left;
-    width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: #000807;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-}
-.dropdown-content a:hover{
-  transform: scale(1.1,1.1);
-  background-color: black;
-  color:white;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.header_signup {
-  background-color: black;
-  color: white;
-  border: none;
-  width: 95px;
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-.header_signup:hover {
-  color:black;
-  transform: scale(1.1);
-  background-color: white;
-}
-
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            text-align: left;
+            width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #000807;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+        }
+        .dropdown-content a:hover {
+            transform: scale(1.1,1.1);
+            background-color: black;
+            color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .header_signup {
+            background-color: black;
+            color: white;
+            border: none;
+            width: 95px;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        }
+        .header_signup:hover {
+            color: black;
+            transform: scale(1.1);
+            background-color: white;
+        }
         body {
             font-family: sans-serif;
             background-color: #EFE7FF;
-            margin:0;
+            margin: 0;
         }
-        
-
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -133,25 +130,25 @@
 
         .buttons {
             display: flex;
-            justify-content: center; /* Center the buttons horizontally */
-            margin: 0 auto 20px auto; /* Center the container itself and add bottom margin */
-            gap: 1rem; /* Space buttons with a gap */
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            gap: 1rem;
         }
 
         .button {
-            flex: none; /* Ensure buttons do not stretch */
-            width: 150px; /* Set a fixed width for the buttons */
+            flex: none;
+            width: 150px;
             padding: 10px 20px;
             border: 1px solid #ccc;
             background-color: white;
             color: black;
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s;
-            border-radius: 0; /* Remove border-radius if any */
+            border-radius: 0;
         }
 
         .button:first-child {
-            border-right: none; /* Remove right border of the first button */
+            border-right: none;
         }
 
         .button.active {
@@ -171,37 +168,37 @@
             margin: 0 10px;
             display: flex;
             flex-direction: column;
-            border: 1px solid #ccc; /* Add border to each price box */
+            border: 1px solid #ccc;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better appearance */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .price {
-            font-size: 32px; /* Increase the font size */
-            font-weight: bold; /* Make the font bold */
+            font-size: 32px;
+            font-weight: bold;
         }
 
         .price_box hr {
             border: none;
-            border-top: 1px solid #ccc; /* Style the horizontal line */
-            margin: 10px 0; /* Adjust the margin as needed */
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
         }
 
         .price_box button {
             display: block;
             margin-top: auto;
-            height: 50px; /* Increase the height */
-            background-color: black; /* Set background color to black */
-            color: white; /* Set text color to white */
+            height: 50px;
+            background-color: black;
+            color: white;
             border: none;
             cursor: pointer;
-            font-size: 16px; /* Adjust font size as needed */
-            transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color swap */
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .price_box button:hover {
-            background-color: white; /* Swap background color on hover */
-            color: black; /* Swap text color on hover */
+            background-color: white;
+            color: black;
         }
 
         table {
@@ -214,7 +211,7 @@
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
-            vertical-align: top; /* Align content to the top */
+            vertical-align: top;
         }
 
         th {
@@ -237,176 +234,181 @@
         }
 
         .price-card .get-started {
-            background-color: black; /* Set background color to black */
-            color: white; /* Set text color to white */
-            padding: 15px 60px; /* Increase padding for more width and height */
+            background-color: black;
+            color: white;
+            padding: 15px 60px;
             border: none;
             cursor: pointer;
-            transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color swap */
-            border-radius: 3px; /* Optional: Add border-radius for rounded corners */
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 3px;
         }
 
         .price-card .get-started:hover {
-            background-color: white; /* Swap background color on hover */
-            color: black; /* Swap text color on hover */
+            background-color: white;
+            color: black;
         }
 
         .page-8 {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-family: "roboto flex";
-    height: 530px;
-    width: 100vw;
-    padding: 50px 0; /* Top and bottom padding */
-    color: black; /* White text color */
-  }
-  .container_8 {
-    width: 100%;;
-    margin: 0px 80px 0px 80px;
-    display: flex; /* Use flexbox for layout */
-    justify-content: left; /* Space elements evenly */
-    align-items: center; /* Center elements vertically */
-  }
-  .content_8 {
-    flex: 1; /* Make content flexible to take up available space */
-    padding: 40px;
-    margin-left: 30px;;
-    text-align: left; /* Align content to the left */
-  }
-  .image-container_8 {
-    flex: 1; /* Make image flexible to take up available space */
-    text-align: right; /* Align image to the right */
-    padding: 40px;
-  }
-  .image-container_8 img {
-    max-width: 100%; /* Ensure image doesn't exceed container width */
-    height: auto; /* Maintain aspect ratio */
-  }
-  .buttons_8 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: left;
-  }
-  .btn_8 {
-    background-color: #fff; /* Button color */
-    color: #000;
-    margin: 0px 10px 0px 0px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-.gallery_8 {
-    width: 100%;
-    max-width: 820px;
-    height: 340px;
-    display: flex;
-    gap: 10px;
-    padding: 20px;
-}
-
-.card {
-    min-width: 70px;
-    height: 100%;
-    border-radius: 30px;
-    overflow: hidden;
-    position: relative;
-    flex-grow: 1;
-    cursor: pointer;
-    transition: 
-        flex-grow 0.5s ease,
-        border-radius 0.5s ease;
-}
-
-.card:hover {
-    flex-grow: 7;
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.card:hover {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.backdrop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
-    opacity: 0.7;
-    z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .container {
-        height: 280px;
-        max-width: 95%;
-    }
-}
-  
-  .buttons {
-    display: flex;
-    gap: 1rem; /* Space buttons with a gap */
-  }
-  
-  .buttons button:first-child {
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .buttons button:first-child:hover {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #333;
-  }
-  
-  .buttons button:last-child {
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #333;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .buttons button:last-child:hover {
-    background-color: #333;
-    color: #fff;
-  }
-
-  .planning {
             display: flex;
-            justify-content: space-between; /* Space elements evenly */
-            align-items: center; /* Center elements vertically */
-            padding: 20px 0; /* Add padding for spacing */
+            justify-content: left;
+            align-items: center;
+            font-family: "roboto flex";
+            height: 530px;
+            width: 100vw;
+            padding: 50px 0;
+            color: black;
+        }
+
+        .container_8 {
+            width: 100%;
+            margin: 0px 80px 0px 80px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .content_8 {
+            flex: 1;
+            padding: 40px;
+            margin-left: 30px;
+            text-align: left;
+        }
+
+        .image-container_8 {
+            flex: 1;
+            text-align: right;
+            padding: 40px;
+        }
+
+        .image-container_8 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buttons_8 {
+            margin-top: 20px;
+            display: flex;
+            justify-content: left;
+        }
+
+        .btn_8 {
+            background-color: #fff;
+            color: #000;
+            margin: 0px 10px 0px 0px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .gallery_8 {
+            width: 100%;
+            max-width: 820px;
+            height: 340px;
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .card {
+            min-width: 70px;
+            height: 100%;
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+            flex-grow: 1;
+            cursor: pointer;
+            transition: flex-grow 0.5s ease, border-radius 0.5s ease;
+        }
+
+        .card:hover {
+            flex-grow: 7;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .card:hover {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                height: 280px;
+                max-width: 95%;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .buttons button:first-child {
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .buttons button:first-child:hover {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #333;
+        }
+
+        .buttons button:last-child {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            color: #333;
+            border: 1px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .buttons button:last-child:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .planning {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
         }
 
         .planning .text-container {
-            text-align: left; /* Align text to the left */
-            flex: 1; /* Allow the text container to take up available space */
+            text-align: left;
+            flex: 1;
         }
 
         .planning .buttons {
             display: flex;
-            gap: 1rem; /* Space buttons with a gap */
-            justify-content: flex-end; /* Align buttons to the right */
+            gap: 1rem;
+            justify-content: flex-end;
         }
 
         .buttons button {
@@ -432,105 +434,117 @@
             color: #fff;
         }
 
+        .fh_footer {
+            font-family: "roboto flex";
+            color: #000;
+            padding: 40px;
+        }
 
+        .fh_footer_content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 250px;
+        }
 
-.fh_footer {
-    font-family: "roboto flex";
-    color: #000;
-    padding: 40px;
-}
-.fh_footer_content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 250px; /* Center the content */
-}
-.fh_footer_section {
-    flex: 1;
-    margin-top:10px;
-    min-width: 200px;
-}
-.fh_footer_section h4 {
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-.fh_footer_section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.fh_footer_section ul li {
-    margin-bottom: 10px;
-}
-.fh_footer_section ul li a {
-    text-decoration: none;
-    color: #000;
-}
-.fh_footer_section ul li a:hover {
-    text-decoration: underline;
-}
-.fh_footer_subscribe {
-    display: flex;
-    margin-top:10px;
-    flex-direction: column;
-}
-.fh_footer_subscribe input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.fh_footer_subscribe button {
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.fh_footer_subscribe button:hover {
-    background-color: #444;
-}
-.fh_footer_bottom {
-    text-align: left;
-    margin-top: 40px;
-    font-size: 14px;
-}
-.fh_social_icons {
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-}
-.fh_social_icons a {
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
-}
+        .fh_footer_section {
+            flex: 1;
+            margin-top: 10px;
+            min-width: 200px;
+        }
+
+        .fh_footer_section h4 {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .fh_footer_section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fh_footer_section ul li {
+            margin-bottom: 10px;
+        }
+
+        .fh_footer_section ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .fh_footer_section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .fh_footer_subscribe {
+            display: flex;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+
+        .fh_footer_subscribe input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .fh_footer_subscribe button {
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .fh_footer_subscribe button:hover {
+            background-color: #444;
+        }
+
+        .fh_footer_bottom {
+            text-align: left;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        .fh_social_icons {
+            display: flex;
+            justify-content: right;
+            gap: 10px;
+        }
+
+        .fh_social_icons a {
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
-<header>
-<div>
-<img class="logo" src="logo.png" alt="Logo"> 
-</div>
-<nav>
-        <ul class = "nag">
-            <li><a href="#">Home Page</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Pricing-Plans</a>
-                <div class="dropdown-content">
-                    <a href="#main-pricing">Basic</a>
-                    <a href="#main-pricing">Advanced</a>
-                    <a href="#main-pricing">Premimum</a>
-                </div>
-            </li>
-            <li><button class="header_signup">Sign Up</button></li>
-        </ul>
-    </nav>
-  </header>
+    <header>
+        <div>
+            <img class="logo" src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nag"></ul>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Pricing-Plans</a>
+                    <div class="dropdown-content">
+                        <a href="#main-pricing">Basic</a>
+                        <a href="#main-pricing">Advanced</a>
+                        <a href="#main-pricing">Premimum</a>
+                    </div>
+                </li>
+                <li><button class="header_signup">Sign Up</button></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="header">
         <h2>Event Packages Overview</h2>
@@ -556,8 +570,6 @@
             });
         });
     </script>
-    <br>
-    </br>
 
     <div class="price_boxes">
         <div class="price_box">
@@ -777,21 +789,21 @@
               </div>    
           </div>
       </div>
-  </div>
+    </div>
 
     <div class="planning">
-      <div class = "special-quote">
+        <div class = "special-quote">
         <h1>Start Planning Your Perfect Event</h1>
         <p>Get a custom quote for your unforgettable experience today!</p>
-      </div>
+        </div>
     <div class="buttons">
-      <button class="contact">Contact</button>
-      <button class="learn-more">Learn More</button>
-    </div>
+        <button class="contact">Contact</button>
+        <button class="learn-more">Learn More</button>
+        </div>
     </div>
     
     <hr>
-    <div class="fh_footer">
+        <div class="fh_footer">
       <div class="fh_footer_content">
           <!-- Logo Section -->
           <div class="fh_footer_section">
@@ -858,7 +870,7 @@
               <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
       </div>
-</div>  
+    </div>  
 
 </body>
 </html>

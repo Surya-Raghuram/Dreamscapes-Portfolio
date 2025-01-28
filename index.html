@@ -236,7 +236,6 @@
     </script>
     <!-- PLEASE DONT CHANGE ANYTHING IN PAGE 2 ! -->
 
-
     <!-- PLEASE DONT CHANGE ANYTHING IN PAGE 3 ! -->
     <div class="page_3">
         <div class="container_3">
@@ -267,8 +266,6 @@
         </div>
     </div>
     <!-- PLEASE DONT CHANGE ANYTHING IN PAGE 3 ! -->
-
-
 
     <div class="page-4">
         <div class="left-column">
@@ -383,250 +380,250 @@
             <button id="next" style="border-radius: 100%; background: transparent; border: 2px solid #9395D3; padding: 10px; display: block; margin: 10px auto 0;">→</button>
         </div>
     </div> <!-- Closing tag for review-container -->
-</div> <!-- Closing tag for page-5 -->
+    </div> <!-- Closing tag for page-5 -->
 
-<script>
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    const reviews = document.querySelectorAll('.review');
-    let currentReview = 0;
+    <script>
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const reviews = document.querySelectorAll('.review');
+        let currentReview = 0;
 
-    // Initially hide all reviews except the first one
-    reviews.forEach((review, index) => {
-        if (index !== 0) {
-        review.style.display = 'none';
-        }
-    });
-
-    function showReview(index, direction) {
-        reviews.forEach((review, i) => {
-        if (i === index) {
-            review.style.display = 'block';
-            review.style.transform = direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
-            review.style.opacity = 0;
-            setTimeout(() => {
-            review.style.transition = 'transform 0.5s, opacity 0.5s';
-            review.style.transform = 'translateX(0)';
-            review.style.opacity = 1;
-            }, 10);
-        } else {
-            review.style.transition = 'transform 0.5s, opacity 0.5s';
-            review.style.transform = 'translateX(0)';
-            review.style.opacity = 0;
-            setTimeout(() => {
+        // Initially hide all reviews except the first one
+        reviews.forEach((review, index) => {
+            if (index !== 0) {
             review.style.display = 'none';
-            }, 500);
-        }
+            }
         });
-    }
 
-    nextButton.addEventListener('click', () => {
-        if (currentReview < reviews.length - 1) {
-        currentReview++;
+        function showReview(index, direction) {
+            reviews.forEach((review, i) => {
+            if (i === index) {
+                review.style.display = 'block';
+                review.style.transform = direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
+                review.style.opacity = 0;
+                setTimeout(() => {
+                review.style.transition = 'transform 0.5s, opacity 0.5s';
+                review.style.transform = 'translateX(0)';
+                review.style.opacity = 1;
+                }, 10);
+            } else {
+                review.style.transition = 'transform 0.5s, opacity 0.5s';
+                review.style.transform = 'translateX(0)';
+                review.style.opacity = 0;
+                setTimeout(() => {
+                review.style.display = 'none';
+                }, 500);
+            }
+            });
+        }
+
+        nextButton.addEventListener('click', () => {
+            if (currentReview < reviews.length - 1) {
+            currentReview++;
+            showReview(currentReview, 'next');
+            }
+        });
+
+        prevButton.addEventListener('click', () => {
+            if (currentReview > 0) {
+            currentReview--;
+            showReview(currentReview, 'prev');
+            }
+        });
+
+        // Show the first review with animation
         showReview(currentReview, 'next');
-        }
-    });
+    </script>
 
-    prevButton.addEventListener('click', () => {
-        if (currentReview > 0) {
-        currentReview--;
-        showReview(currentReview, 'prev');
-        }
-    });
-
-    // Show the first review with animation
-    showReview(currentReview, 'next');
-</script>
-
-<div class="page-6">
-    <h4 style="padding-left: 312.5px; padding-bottom: 20px; font-size: 16px;">Meet</h4>
-    <h1 class="our_team" style="padding-left: 312.5px; font-size: 48px;">Our Team</h1>
-    <div class="team">
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/ProfilePics/ProfilePic1.jpg" alt="Team Member Image">
+    <div class="page-6">
+        <h4 style="padding-left: 312.5px; padding-bottom: 20px; font-size: 16px;">Meet</h4>
+        <h1 class="our_team" style="padding-left: 312.5px; font-size: 48px;">Our Team</h1>
+        <div class="team">
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/ProfilePics/ProfilePic1.jpg" alt="Team Member Image">
+                </div>
+                <h3 style="font-size: 20px; font-weight: bold;">Alice Johnson</h3>
+                <p>Event Planner</p>
+                <p>Bringing over a decade of experience in creating unforgettable events for all occasions.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-            <h3 style="font-size: 20px; font-weight: bold;">Alice Johnson</h3>
-            <p>Event Planner</p>
-            <p>Bringing over a decade of experience in creating unforgettable events for all occasions.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/ProfilePics/ProfilePic2.jpg" alt="Team Member Image">
+                </div>
+                <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
+                <p>Event Coordinator</p>
+                <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/ProfilePics/ProfilePic2.jpg" alt="Team Member Image">
+            <div class="team-member">
+                <div class="image-container">
+                    <img src="assets/ProfilePics/ProfilePic3.jpg" alt="Team Member Image">
+                </div>
+                <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
+                <p>Event Coordinator</p>
+                <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-            <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
-            <p>Event Coordinator</p>
-            <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="team-member" style="margin-left: 200px;">
+                <div class="image-container">
+                    <img src="assets/ProfilePics/ProfilePic5.jpg" alt="Team Member Image">
+                </div>
+                <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
+                <p>Event Coordinator</p>
+                <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="assets/ProfilePics/ProfilePic3.jpg" alt="Team Member Image">
-            </div>
-            <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
-            <p>Event Coordinator</p>
-            <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <div class="team-member" style="margin-left: 200px;">
-            <div class="image-container">
-                <img src="assets/ProfilePics/ProfilePic5.jpg" alt="Team Member Image">
-            </div>
-            <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
-            <p>Event Coordinator</p>
-            <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <div class="team-member" style="margin-right: 200px;">
-            <div class="image-container">
-                <img src="assets/ProfilePics/ProfilePic4.jpg" alt="Team Member Image">
-            </div>
-            <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
-            <p>Event Coordinator</p>
-            <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="team-member" style="margin-right: 200px;">
+                <div class="image-container">
+                    <img src="assets/ProfilePics/ProfilePic4.jpg" alt="Team Member Image">
+                </div>
+                <h3 style="font-size: 20px; font-weight: bold;">John Smith</h3>
+                <p>Event Coordinator</p>
+                <p>Expert in logistics and coordination, ensuring every event runs smoothly.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="page_7">
-    <div class="container_7">
-        <h2 class="text-center_7" id="animatedText"></h2>
-        <p class="text-center_7">
-            "Get ready to embark on an unforgettable journey <br>where every moment turns into a cherished memory!"
-        </p>
-        <div class="text-center_7">
-            <a href="pricing.html" target="_blank"><button class="pricing-button">Get Started</button></a>
+    <div class="page_7">
+        <div class="container_7">
+            <h2 class="text-center_7" id="animatedText"></h2>
+            <p class="text-center_7">
+                "Get ready to embark on an unforgettable journey <br>where every moment turns into a cherished memory!"
+            </p>
+            <div class="text-center_7">
+                <a href="pricing.html" target="_blank"><button class="pricing-button">Get Started</button></a>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="page-8">
-    <div class="container_8">
-        <div class="content_8">
-            <h2 style = "font-size:48px">Plan Your Perfect Event <br>Today</h2>
-            <br>
-            <p style =  "font-size:18px;">Contact us now for a personalized consultation and<br> let us bring your vision to life.</p>
-            <br>
-            <div class="buttons_8">
-                <button class="btn_8">Inquire</button>
-                <button class="btn_8">Learn More</button>
+    <div class="page-8">
+        <div class="container_8">
+            <div class="content_8">
+                <h2 style = "font-size:48px">Plan Your Perfect Event <br>Today</h2>
+                <br>
+                <p style =  "font-size:18px;">Contact us now for a personalized consultation and<br> let us bring your vision to life.</p>
+                <br>
+                <div class="buttons_8">
+                    <button class="btn_8">Inquire</button>
+                    <button class="btn_8">Learn More</button>
+                </div>
             </div>
-        </div>
-        <div class="image-container_8">
-            <div class="gallery_8">
-                <div class="card">
-                    <img src="assets/AgencyWorkingImages/AgencyWorkingImg_1.jpg" alt="Gallery item">
-                    <div class="backdrop"></div>
-                </div>
-                <div class="card">
-                    <img src="assets/AgencyWorkingImages/AgencyWorkingImg_2.jpg" alt="Gallery item">
-                    <div class="backdrop"></div>
-                </div>
-                <div class="card">
-                    <img src="assets/AgencyWorkingImages/AgencyWorkingImg_3.jpg" alt="Gallery item">
-                    <div class="backdrop"></div>
-                </div>
-                <div class="card">
-                    <img src="assets/AgencyWorkingImages/AgencyWorkingImg_4.jpg" alt="Gallery item">
-                    <div class="backdrop"></div>
-                </div>
-            </div>    
+            <div class="image-container_8">
+                <div class="gallery_8">
+                    <div class="card">
+                        <img src="assets/AgencyWorkingImages/AgencyWorkingImg_1.jpg" alt="Gallery item">
+                        <div class="backdrop"></div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/AgencyWorkingImages/AgencyWorkingImg_2.jpg" alt="Gallery item">
+                        <div class="backdrop"></div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/AgencyWorkingImages/AgencyWorkingImg_3.jpg" alt="Gallery item">
+                        <div class="backdrop"></div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/AgencyWorkingImages/AgencyWorkingImg_4.jpg" alt="Gallery item">
+                        <div class="backdrop"></div>
+                    </div>
+                </div>    
+            </div>
         </div>
     </div>
-</div>
 
-<hr>
+    <hr>
 
-<div class="fh_footer">
-        <div class="fh_footer_content">
-            <!-- Logo Section -->
-            <div class="fh_footer_section">
-                <h4>Dreamscape Co.</h4>
-                <img src="footerlogo.png" alt="Dreamscape Co. Logo">
-            </div>
-    
-            <!-- Quick Links -->
-            <div class="fh_footer_section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Blog Posts</a></li>
-                </ul>
-            </div>
-    
-            <!-- Follow Us -->
-            <div class="fh_footer_section">
-                <h4>Follow Us</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">YouTube</a></li>
-                </ul>
-            </div>
-    
-            <!-- Stay Updated -->
-            <div class="fh_footer_section">
-                <h4>Stay Updated</h4>
-                <ul>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Feedback</a></li>
-                </ul>
-            </div>
-    
-            <!-- Subscribe Section -->
-            <div class="fh_footer_section fh_footer_subscribe">
-                <h4>Subscribe</h4>
-                <p>Join our newsletter for the latest updates and exclusive offers.</p>
-                <div style="display: flex; gap: 10px; align-items: center; margin-top:10px;">
-                    <input type="email" placeholder="Enter your email" style="flex: 1; height: 40px; padding: 0 10px; box-sizing: border-box; margin-bottom: 0px;">
-                    <button style="height: 40px; padding: 0 20px; box-sizing: border-box;">Subscribe</button>
+    <div class="fh_footer">
+            <div class="fh_footer_content">
+                <!-- Logo Section -->
+                <div class="fh_footer_section">
+                    <h4>Dreamscape Co.</h4>
+                    <img src="footerlogo.png" alt="Dreamscape Co. Logo">
+                </div>
+        
+                <!-- Quick Links -->
+                <div class="fh_footer_section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog Posts</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Follow Us -->
+                <div class="fh_footer_section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Stay Updated -->
+                <div class="fh_footer_section">
+                    <h4>Stay Updated</h4>
+                    <ul>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Subscribe Section -->
+                <div class="fh_footer_section fh_footer_subscribe">
+                    <h4>Subscribe</h4>
+                    <p>Join our newsletter for the latest updates and exclusive offers.</p>
+                    <div style="display: flex; gap: 10px; align-items: center; margin-top:10px;">
+                        <input type="email" placeholder="Enter your email" style="flex: 1; height: 40px; padding: 0 10px; box-sizing: border-box; margin-bottom: 0px;">
+                        <button style="height: 40px; padding: 0 20px; box-sizing: border-box;">Subscribe</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="fh_footer_bottom" style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-            &copy; 2024 Dreamscape Co. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Settings</a>
+            <hr>
+            <div class="fh_footer_bottom" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                &copy; 2024 Dreamscape Co. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Settings</a>
+                </div>
+                <div class="fh_social_icons" style="display: flex; gap:15px; align-items: right;">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-            <div class="fh_social_icons" style="display: flex; gap:15px; align-items: right;">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-</div>
+    </div>
 
 </body>
 </html>
