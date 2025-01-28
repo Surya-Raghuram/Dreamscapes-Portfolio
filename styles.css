@@ -34,19 +34,6 @@ header {
   padding: 10px 20px;
   transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
-/* Target the logo container div */
-header > div {
-  background-color: lightblue; /* Light blue background */
-  display: inline-block; /* Contain background to logo size */
-  padding: 10px; /* Optional spacing around logo */
-}
-
-/* Scale the logo image */
-img.logo {
-  width: 160px; /* Adjust based on your preference */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below image */
-}
 header.scrolled {
   background-color: #9395D3; /* Blue background color when scrolled */
   backdrop-filter: none; /* Remove blur effect when scrolled */
