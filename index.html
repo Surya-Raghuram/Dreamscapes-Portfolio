@@ -71,14 +71,11 @@
 </head>
 <body>
     <header>
-        <div>
-            <img class="logo" src="assets/logo.png" alt="Logo"> 
-        </div>
         <nav>
             <ul class = "nag">
-                <li><a href="#">Home Page</a></li>
+                <li><a href="#main_page">Home Page</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
+                <li><a href="pricing.html#main-pricing">Our Services</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Pricing-Plans</a>
                     <div class="dropdown-content">
@@ -91,6 +88,9 @@
             </ul>
         </nav>
     </header>
+    <div class = "header-logo">
+        <img class="logo" src="assets/logo.png" alt="Logo"> 
+    </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const header = document.querySelector('header');
@@ -108,8 +108,8 @@
 
     <div class="main_page">
         <div class="quote">
-            <p style="font-family: Roboto flex; font-size: 20px;">Welcome to Dreamscapes Company</p>
-            <h1 style="font-size: 64px;">Your Vision, <span id="changingText" class="changing-text"></span><span class="cursor">|</span></h1>
+            <p style="font-family: Roboto flex; font-size: 20px; padding-bottom: 10px">Welcome to Dreamscapes Company</p>
+            <h1 style="font-size: 74px; padding-bottom: 80px;">Your Vision, <span id="changingText" class="changing-text"></span><span class="cursor">|</span></h1>
             <script>
             const quotes = [
                 "Our Execution...",
@@ -514,7 +514,7 @@
                 "Get ready to embark on an unforgettable journey <br>where every moment turns into a cherished memory!"
             </p>
             <div class="text-center_7">
-                <a href="pricing.html" target="_blank"><button class="pricing-button">Get Started</button></a>
+                <a href="pricing.html" target="_blank"><button class="pricing-button">View Pricing  </button></a>
             </div>
         </div>
     </div>
@@ -527,8 +527,8 @@
                 <p style =  "font-size:18px;">Contact us now for a personalized consultation and<br> let us bring your vision to life.</p>
                 <br>
                 <div class="buttons_8">
-                    <button class="btn_8">Inquire</button>
-                    <button class="btn_8">Learn More</button>
+                    <button class="btn_1_8">Inquire</button>
+                    <button class="btn_2_8">Learn More</button>
                 </div>
             </div>
             <div class="image-container_8">
@@ -549,6 +549,10 @@
                         <img src="assets/AgencyWorkingImages/AgencyWorkingImg_4.jpg" alt="Gallery item">
                         <div class="backdrop"></div>
                     </div>
+                    <div class="card">
+                        <img src="assets/AgencyWorkingImages/AgencyWorkingImg_5.jpg" alt="Gallery item">
+                        <div class="backdrop"></div>
+                    </div>
                 </div>    
             </div>
         </div>
@@ -556,12 +560,12 @@
 
     <hr>
 
-    <div class="fh_footer">
+    <div class="fh_footer" id="footer">
             <div class="fh_footer_content">
                 <!-- Logo Section -->
                 <div class="fh_footer_section">
                     <h4>Dreamscape Co.</h4>
-                    <img src="footerlogo.png" alt="Dreamscape Co. Logo">
+                    <img src="assets/logo_2.png" alt="Dreamscape Co. Logo" style="height: 150px; width: auto;">
                 </div>
         
                 <!-- Quick Links -->
@@ -606,7 +610,7 @@
                     <p>Join our newsletter for the latest updates and exclusive offers.</p>
                     <div style="display: flex; gap: 10px; align-items: center; margin-top:10px;">
                         <input type="email" placeholder="Enter your email" style="flex: 1; height: 40px; padding: 0 10px; box-sizing: border-box; margin-bottom: 0px;">
-                        <button style="height: 40px; padding: 0 20px; box-sizing: border-box;">Subscribe</button>
+                        <a href="index.html#footer"><button style="height: 40px; padding: 0 20px; box-sizing: border-box;">Subscribe</button></a>
                     </div>
                 </div>
             </div>

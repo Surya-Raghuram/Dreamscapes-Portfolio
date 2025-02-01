@@ -8,69 +8,69 @@
     <title>Pricing Plans</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            margin-left: auto;
-        }
         header {
-            background-color: #EFE7FF;
             font-family: "roboto flex";
             position: fixed;
             top: 0;
             width: 98%;
+            backdrop-filter: blur(10px); /* Blur effect */
             z-index: 5000;
             display: flex;
-            justify-content: flex-end;
-            align-items: right;
-            padding: 10px 20px;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
+            justify-content: space-between;
             align-items: center;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        .logo {
-            width: 25px;
-            height: 25px;
-        }
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
-        }
-        .dropdown {
-            position: relative;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            text-align: left;
-            width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: #000807;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-        }
-        .dropdown-content a:hover {
+            padding: 10px 20px;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+            }
+            header.scrolled {
+            background-color: #9395D3; /* Blue background color when scrolled */
+            backdrop-filter: none; /* Remove blur effect when scrolled */
+            }
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+            nav ul li {
+                margin-left: 20px;
+            }
+            .logo{
+                width: 25px;
+                height: 25px;
+            }
+            nav ul li a {
+                color: #333;
+                text-decoration: none;
+            }
+            .dropdown {
+                position: relative;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                text-align: left;
+                width: 100px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: #000807;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+            }
+            .dropdown-content a:hover{
             transform: scale(1.1,1.1);
             background-color: black;
-            color: white;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .header_signup {
+            color:white;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .header_signup {
             background-color: black;
             color: white;
             border: none;
@@ -79,12 +79,12 @@
             border-radius: 10px;
             cursor: pointer;
             transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-        }
-        .header_signup:hover {
-            color: black;
+            }
+            .header_signup:hover {
+            color:black;
             transform: scale(1.1);
             background-color: white;
-        }
+            }
         body {
             font-family: sans-serif;
             background-color: #EFE7FF;
@@ -526,13 +526,13 @@
 <body>
     <header>
         <div>
-            <img class="logo" src="logo.png" alt="Logo">
+            <img class="logo" src="assets/logo.png" alt="Logo"> 
         </div>
         <nav>
-            <ul class="nag"></ul>
-                <li><a href="#">Home Page</a></li>
+            <ul class = "nag">
+                <li><a href="index.html#main_page">Home Page</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
+                <li><a href="#main-pricing">Our Services</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Pricing-Plans</a>
                     <div class="dropdown-content">

@@ -22,13 +22,14 @@ header {
   position: fixed;
   top: 0;
   width: 98%;
+  height: 75px;
   backdrop-filter: blur(10px); /* Blur effect */
   z-index: 5000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  padding: 0px 20px;
+  transition: background-color 1s ease; /* Smooth transition for background color */
 }
 header.scrolled {
   background-color: #9395D3; /* Blue background color when scrolled */
@@ -43,10 +44,6 @@ nav ul {
 }
 nav ul li {
     margin-left: 20px;
-}
-.logo{
-    width: 25px;
-    height: 25px;
 }
 nav ul li a {
     color: #333;
@@ -79,8 +76,8 @@ nav ul li a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.header_signup {
-  background-color: black;
+.header_signup{
+  background-color: #000807;
   color: white;
   border: none;
   width: 95px;
@@ -90,9 +87,30 @@ nav ul li a {
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 .header_signup:hover {
-  color:black;
+  color:#000807;
   transform: scale(1.1);
   background-color: white;
+  text-shadow: 10px 0 20px #000807;
+}
+
+.header-logo{
+  position: fixed;
+  top:-30px;
+  left:-150px;
+  z-index:5001;
+  background-color: transparent;
+}
+.logo {
+  height: 300px;
+  width: auto;
+  transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition for transform and width */
+}
+
+
+.header-logo.scrolled .logo {
+  width: 40px; /* Reduce the size of the image when scrolled */
+  height: auto;
+  transform: translateY(-10px); /* Move the image up when scrolled */
 }
 
 .main_page {
@@ -105,7 +123,7 @@ nav ul li a {
   position: absolute;
 }
 .quote {
-  margin-top: 400px;
+  margin-top: 350px;
   font-family: "Paytone one";
   text-align: center;
   font-size: 24px;
@@ -121,9 +139,9 @@ nav ul li a {
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 .getstarted:hover {
-  background-color: white;
-  transform: scale(1.1);
-  color: black;
+  background-color: transparent;
+  transform: scale(1.5);
+  color: #000807;
 }
 
 .page_2 {
@@ -415,6 +433,7 @@ nav ul li a {
 .team-member:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 40px #9395D3;
 }
 .team-member::before .image-container::before {
   content: '';
@@ -470,7 +489,7 @@ nav ul li a {
 }
 .team-member .social-icons {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   margin-top: 20px;
 }
 .team-member .social-icons a {
@@ -491,7 +510,7 @@ nav ul li a {
   align-items: center;
   margin: 0 auto;
   font-family: "Roboto Flex";
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   border-radius: 20px;
   padding: 50px 0;
@@ -514,20 +533,19 @@ nav ul li a {
   margin-bottom: 40px;
 }
 #animatedText {
-  margin-left: 540px;
+  margin-left: 600px;
   margin-right: auto;
   text-align: left;
   width: 100%;
   font-size: 64px;
-  font-weight: 1000;
   margin-bottom: 30px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .pricing-button {
   margin-bottom: 50px;
   margin-top: 50px;
   height: 80px;
-  width: 275px;
+  width: 300px;
   font-family: "Montserrat";
   font-weight: 1000;
   background: #9395D3;
@@ -540,22 +558,13 @@ nav ul li a {
   cursor: pointer;
 }
 
-.pricing-button::after {
-  content: "→";
-  position: absolute;
-  right: 15px;
-  opacity: 0;
-  transition: 0.3s;
-}
-
 .pricing-button:hover {
-  padding-right: 55px;
+  background-color: #000807;
+  transform: scale(1.1);
+  text-shadow: 10px 0 40px #9395D3;
+  color: #9395D3;
 }
 
-.pricing-button:hover::after {
-  opacity: 1;
-  right: 20px;
-}
 
 .page-8 {
   display: flex;
@@ -577,8 +586,9 @@ nav ul li a {
 .content_8 {
   flex: 1;
   padding: 40px;
-  margin-left: 30px;
+  margin-left: 150px;
   text-align: left;
+  padding-right: 0;
 }
 .image-container_8 {
   flex: 1;
@@ -590,18 +600,44 @@ nav ul li a {
   height: auto;
 }
 .buttons_8 {
-  margin-top: 20px;
+  margin-top: 32px;
   display: flex;
   justify-content: left;
 }
-.btn_8 {
-  background-color: #fff;
-  color: #000;
-  margin: 0px 10px 0px 0px;
-  padding: 15px 30px;
+.btn_1_8{
+  background-color: #000807;
+  color: white;
+  font-size: 16px;
+  margin: 0px 16px 0px 0px;
+  padding: 16px 25px;
   border: none;
-  border-radius: 5px;
+  height: 48px;
+  border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn_1_8:hover{
+  transform: scale(1.13);
+  border: 1px solid #000807;
+  background-color: #9395D3;
+  color: #000807;
+}
+.btn_2_8{
+  background-color: #9395D3;
+  color: #000807;
+  font-size: 16px;
+  margin: 0px 16px 0px 0px;
+  padding: 16px 25px;
+  border: 1px solid #000807;
+  height: 48px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn_2_8:hover{
+  transform: scale(1.13);
+  background-color: #000807;
+  color:white;
 }
 .gallery_8 {
   width: 100%;
